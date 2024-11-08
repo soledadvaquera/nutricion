@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/* MENU */
+.contenedor-header{
+    background: #80a3d3;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #070707;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #000000;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: underline;
+}
+.contenedor-header header nav ul li a:hover{
+    color:   hsl(0, 0%, 100%);
+}
+
+/* SECCION ENFERMEDADES */
+.enfermedades{
+    background-color: #073a54;
+    color: #ffffff;
+    padding: 50px 20px;
+    max-width: 100%; 
+}
+.enfermedades .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.enfermedades h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.enfermedades .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.enfermedades .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.enfermedades .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.enfermedades .fila .izquierda{
+    border-right: 2px solid #000000;
+}
+.enfermedades .fila .derecha{
+    border-left: 2px solid #000000;
+}
+.enfermedades .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #b896a0;
+    position: relative;
+}
+.enfermedades .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.enfermedades .fila .item .casa{
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.enfermedades .fila .item .fecha{
+    display: block;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.enfermedades .fila .item p{
+    line-height: 24px;
+}
+.enfermedades .fila .izq{
+    border-right: 2px solid #000000;
+    margin-right: 20px;
+}
+.enfermedades .fila .der{
+    border-left: 2px solid #000000;
+    margin-left: 20px;
+}
+.enfermedades .fila .item .conectori{
+    height: 2px;
+    background-color: #000000;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.enfermedades .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.enfermedades .fila .item .conectord{
+    height: 2px;
+    background-color: #000000;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.enfermedades .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
